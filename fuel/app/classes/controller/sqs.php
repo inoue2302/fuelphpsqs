@@ -18,5 +18,6 @@ class Controller_Sqs extends Controller
 	\Logic\Aws_Sqs::send_sqs_message("Hellow Sqs!!");
 	$data['title'] = 'Sqsにメッセージを送信しました。';
 	return View::forge('sqs/add',$data);
+
   }
 }
